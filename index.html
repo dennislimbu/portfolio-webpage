@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/63124842e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dennis Limbu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dennis</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/Profile_icon.PNG" alt="Dennis Limbu profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi There! I'm</p>
+        <h1 class="title">Dennis Limbu</h1>
+        <p class="section__text__p2">Aspring Frontend | Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <i
+            class="fa-brands fa-linkedin"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dennis-limbu-68874a194/'"
+          ></i>
+          <i
+            class="fa-brands fa-github"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dennislimbu'"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/about_me_image.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i
+                class="fa-solid fa-briefcase"
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              ></i>
+              <h3>Experience</h3>
+              <p>1 year <br />Junior Front-End Development</p>
+            </div>
+            <div class="details-container">
+              <i
+                class="fa-solid fa-book-open"
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              ></i>
+              <img />
+              <h3>Education</h3>
+              <p>
+                BSc(Hons) Computing <br />
+                OpenClassrooms | Web Dev Boot Camp
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Driven by a passion for Front-end | Web development, I bring a
+              commitment to delivering meticulously designed applications. With
+              expertise across the development lifecycle, I am confident in
+              making valuable contributions to organizational success. Eager to
+              work in a software company that fosters personal growth, I aim to
+              enhance my skills in the IT field. I am actively seeking new job
+              opportunities in the web development field. Let's connect and
+              discuss how my skills can contribute to your team's success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/HTML5_logo_and_wordmark.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/CSS3_logo_and_wordmark.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/sass-badge.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/Javascript_badge.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/react-badge.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/VSC-badge.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-1.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tourism Web Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dennislimbu/tourismWebPage.github.io'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dennislimbu/dennislimbu.github.io'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-2.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              OhMyFoods <br />Web | Mobile Application
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dennislimbu/dennislimbu.github.io?tab=readme-ov-file'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dennislimbu.github.io/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/work-in-progress.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Upcoming</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i
+            class="fa-solid fa-inbox"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          ></i>
+
+          <p><a href="mailto:dlimbu107@gmail.com">dlimbu107@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i
+            class="fa-brands fa-linkedin"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          ></i>
+          <p>
+            <a href="https://www.linkedin.com/in/dennis-limbu-68874a194/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Dennis Limbu.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
